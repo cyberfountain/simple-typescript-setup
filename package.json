@@ -1,0 +1,25 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browsersync": "npx browser-sync start --server 'public' --port 5000 --files 'public'",
+    "watch": "npx tsc --project tsconfig.dev.json --watch",
+    "dev": "run-p watch browsersync",
+    "compile": "npx tsc  --project tsconfig.prod.json",
+    "clean": "npx rimraf public/js/**/*",
+    "build": "run-s clean compile",
+    "test": "npx jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "browser-sync": "^2.27.7",
+    "jest": "^27.3.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.4"
+  }
+}
