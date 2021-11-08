@@ -1,8 +1,7 @@
 {
   "name": "ts",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple Typescript Setup",
   "scripts": {
     "browsersync": "npx browser-sync start --server 'public' --port 5000 --files 'public'",
     "watch": "npx tsc --project tsconfig.dev.json --watch",
@@ -12,8 +11,8 @@
     "build": "run-s clean compile",
     "test": "npx jest"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Lukasz Wisniewski",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "browser-sync": "^2.27.7",
