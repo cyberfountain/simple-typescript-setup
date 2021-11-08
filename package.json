@@ -7,7 +7,7 @@
     "browsersync": "npx browser-sync start --server 'public' --port 5000 --files 'public'",
     "watch": "npx tsc --project tsconfig.dev.json --watch",
     "dev": "run-p watch browsersync",
-    "compile": "npx tsc  --project tsconfig.prod.json",
+    "compile": "npx tsc --project tsconfig.prod.json",
     "clean": "npx rimraf public/js/**/*",
     "build": "run-s clean compile",
     "test": "npx jest"
